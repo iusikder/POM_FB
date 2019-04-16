@@ -38,6 +38,7 @@ public class ProfileTest extends BaseTest {
 	//	loginPage.verifyTitle("Facebook Login");
 		Object page = loginPage.doLogin(data.get("Username"), data.get("Password"));
 		
+		//I have to work on verification
 		//verify Login
 		if(page instanceof LoginPage)
 			Assert.fail("Login Failed");
